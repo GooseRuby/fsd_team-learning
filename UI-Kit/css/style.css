@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+
+}
+
+.container {
+  position: absolute;
+  left: 150px;
+  top: 145px;
+  display: flex;
+  flex-direction: column;
+}
+
+.color-n-text {
+  display: flex;
+  align-items: center;
+}
+
+.rectangle {
+  width: 70px;
+  height: 70px;
+/* Dark 100% */
+  border-radius: 6px;
+}
+
+.reccolor0 {
+    background: #1F2041;
+}
+.reccolor1 {
+  background: rgba(31, 32, 65, 0.75);
+}
+.reccolor2 {
+  background: rgba(31, 32, 65, 0.5);
+}
+.reccolor3 {
+  background: rgba(31, 32, 65, 0.25);
+}
+.reccolor4 {
+  background: rgba(31, 32, 65, 0.05);
+}
+.reccolorGreen {
+  background: #BC9CFF;
+}
+.reccolorPurple {
+  background: #6FCF97;
+}
+
+.DarkShade {
+  margin-left: 40px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+/* Dark 100% */
+
+  color: #1F2041;
+}
