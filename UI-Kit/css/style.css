@@ -1,10 +1,14 @@
+/*подключение шрифтов*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-
+  color: rgba(31, 32, 65, 0.75);
 }
 
-.container {
+/*оформление ui-kit*/
+
+.container1 {
   position: absolute;
   left: 150px;
   top: 145px;
@@ -24,38 +28,101 @@ body {
   border-radius: 6px;
 }
 
-.reccolor0 {
-    background: #1F2041;
-}
-.reccolor1 {
-  background: rgba(31, 32, 65, 0.75);
-}
-.reccolor2 {
-  background: rgba(31, 32, 65, 0.5);
-}
-.reccolor3 {
-  background: rgba(31, 32, 65, 0.25);
-}
-.reccolor4 {
-  background: rgba(31, 32, 65, 0.05);
-}
-.reccolorGreen {
-  background: #BC9CFF;
-}
-.reccolorPurple {
-  background: #6FCF97;
-}
-
-.DarkShade {
+.DarkShade-dsc {
   margin-left: 40px;
   font-family: Quicksand;
   font-style: normal;
   font-size: 19px;
   line-height: 29px;
-  display: flex;
-  align-items: center;
-
 /* Dark 100% */
-
   color: #1F2041;
+}
+
+.container2 {
+  position: absolute;
+  left: 854px;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+}
+
+.fonts-prw-cont {
+  display: flex;
+  align-items: flex-start;
+  width: 400px;
+  margin-top: 50px;
+}
+
+.fonts-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  padding-right: 30px;
+  vertical-align: top;
+
+  /* identical to box height */
+  text-align: right;
+  /* Dark 25% */
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.fonts-prw {
+  margin: 0px;
+  vertical-align: top;
+    padding-bottom: 50px;
+}
+
+/*ОФОРМЛЕНИЕ ЭЛЕМЕНТОВ*/
+/*цвета*/
+.DarkShade100 {
+  background: #1F2041;
+}
+.DarkShade75 {
+  background: rgba(31, 32, 65, 0.75);
+}
+.DarkShade50 {
+  background: rgba(31, 32, 65, 0.5);
+}
+.DarkShade25 {
+  background: rgba(31, 32, 65, 0.25);
+}
+.DarkShade05 {
+  background: rgba(31, 32, 65, 0.05);
+}
+.ColorGreen {
+  background: #BC9CFF;
+}
+.ColorPurple {
+  background: #6FCF97;
+}
+
+/*стили текста*/
+h1 {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 24px;
+  color: #1F2041;
+}
+
+h2 {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 19px;
+  color: #1F2041;
+}
+
+h3 {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 12px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Quicksand;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
 }
