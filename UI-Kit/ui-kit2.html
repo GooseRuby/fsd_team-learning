@@ -9,42 +9,14 @@
   <body>
 
 
-    <div class="container2-1"> <!--текстовые поля-->
-      <div>
-          <form>
-              <p><label for="email">Text field</label><br><input type="email" id="email" placeholder="Email"></p>
-              <p><label>Dropdown</label><br>
-                <select class="dropdown">
-                  <option selected disabled hidden>Сколько гостей</option>
-                  <option value="1">Один</option>
-                  <option value="2">Два</option>
-                  <option value="3">Три</option>
-                </select></p>
-          </form>
-
-        </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Выпадающий</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Ссылка 1</a>
+        <a href="#">Ссылка 2</a>
+        <a href="#">Ссылка 3</a>
       </div>
-<!--
-        <h1>Single select</h1>
-        <form>
-          <input type="reset" class="reset" value="Clear it!" />
-          <div class="__select" data-state="">
-            <div class="__select__title" data-default="Option 0">Option 0</div>
-            <div class="__select__content">
-              <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-              <label for="singleSelect0" class="__select__label">Option 0</label>
-              <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-              <label for="singleSelect1" class="__select__label">Option 1</label>
-              <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
-              <label for="singleSelect2" class="__select__label">Option 2 (disabled)</label>
-              <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-              <label for="singleSelect3" class="__select__label">Option 3</label>
-              <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
-              <label for="singleSelect4" class="__select__label">Option 4</label>
-            </div>
-          </div>
-        </form>
--->
+    </div>
 
 
   </body>
