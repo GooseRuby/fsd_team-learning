@@ -5,7 +5,7 @@ function myFunction() {
 }
 
 // Закройте выпадающее меню, если пользователь щелкает за его пределами
-window.onclick = function(event) {
+/*window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -16,4 +16,4 @@ window.onclick = function(event) {
       }
     }
   }
-}
+}*/
