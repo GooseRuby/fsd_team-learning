@@ -204,6 +204,11 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
   z-index: 1; /*нужно, но для чего не знаю*/
 }
 
+.dropdown-itter {
+  margin-left: 15px;
+  margin-bottom: 22px;
+}
+
 /* Изменение цвета выпадающих ссылок при наведении курсора */
 .dropdown-content a:hover {background-color: #ddd}
 
