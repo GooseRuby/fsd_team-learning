@@ -1,6 +1,7 @@
 /*подключение шрифтов*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
   color: rgba(31, 32, 65, 0.75);
@@ -209,8 +210,21 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
   margin-bottom: 22px;
 }
 
-/* Изменение цвета выпадающих ссылок при наведении курсора */
-.dropdown-content a:hover {background-color: #ddd}
-
 /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
 .show {display:block;}
+
+/*Блок переключателей*/
+.pmtoggle {
+  /*position: absolute;*/
+  right: 7px;
+  top: 7px;
+}
+
+/*_____________ВЕКТОРЫ_________________*/
+.material-icons.plusminus {
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: -10px;
+  font-size: 30px;
+  color: rgba(31, 32, 65, 0.5);
+}
