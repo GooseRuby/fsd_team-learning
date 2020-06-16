@@ -15,31 +15,36 @@
 
     <h3 style="margin: 0px;">Dropdown</h3>
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Сколько гостей</button>
+      <button id="GuestBut" onclick="myFunction()" class="dropbtn">Сколько гостей</button>
       <div id="myDropdown" class="dropdown-content">
         <div class="dropdown-itter"><h3>Взрослые
           <div class="pmtoggle">
-            <a href="#"><i id="sub0" onclick="MinusFunction('sub0', 'num0', 'add0')" class="material-icons minus">remove_circle_outline</i></a>
+            <a href="#"><i id="sub0" onclick="MinusFunction('sub0', 'num0', 'add0'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons minus">remove_circle_outline</i></a>
             <span id="num0">0</span>
-            <a href="#"><i id="add0" onclick="PlusFunction('sub0', 'num0', 'add0')" class="material-icons plus">add_circle_outline</i></a>
+            <a href="#"><i id="add0" onclick="PlusFunction('sub0', 'num0', 'add0'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons plus">add_circle_outline</i></a>
           </div>
         </h3></div>
 
         <div class="dropdown-itter"><h3>Дети
           <div class="pmtoggle">
-            <a href="#"><i id="sub1" onclick="MinusFunction('sub1', 'num1', 'add1')" class="material-icons minus">remove_circle_outline</i></a>
+            <a href="#"><i id="sub1" onclick="MinusFunction('sub1', 'num1', 'add1'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons minus">remove_circle_outline</i></a>
             <span id="num1">0</span>
-            <a href="#"><i id="add1" onclick="PlusFunction('sub1', 'num1', 'add1')" class="material-icons plus">add_circle_outline</i></a>
+            <a href="#"><i id="add1" onclick="PlusFunction('sub1', 'num1', 'add1'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons plus">add_circle_outline</i></a>
           </div>
         </h3></div>
 
         <div class="dropdown-itter"><h3>Младенцы
           <div class="pmtoggle">
-            <a href="#"><i id="sub2" onclick="MinusFunction('sub2', 'num2', 'add2')" class="material-icons minus">remove_circle_outline</i></a>
+            <a href="#"><i id="sub2" onclick="MinusFunction('sub2', 'num2', 'add2'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons minus">remove_circle_outline</i></a>
             <span id="num2">0</span>
-            <a href="#"><i id="add2" onclick="PlusFunction('sub2', 'num2', 'add2')" class="material-icons plus">add_circle_outline</i></a>
+            <a href="#"><i id="add2" onclick="PlusFunction('sub2', 'num2', 'add2'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons plus">add_circle_outline</i></a>
           </div>
         </h3></div>
+
+        <div class="lastrow">
+            <a href="#" class="clear" onclick="clearFunction('num0', 'num1', 'num2', 'GuestBut', 'sub0', 'sub1', 'sub2', 'add0', 'add1', 'add2')">Очистить</a>
+            <a href="#" class="agree" onclick="agreeFunction()">Применить</a>
+        </div>
       </div>
     </div>
 
