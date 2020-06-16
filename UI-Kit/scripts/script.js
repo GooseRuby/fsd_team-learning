@@ -1,3 +1,5 @@
+"use strict";
+
 /* Когда пользователь нажимает на кнопку,
 переключение между скрытием и отображением раскрывающегося содержимого */
 function myFunction() {
@@ -17,3 +19,38 @@ function myFunction() {
     }
   }
 }*/
+
+function PlusFunction(sub,num,add) {
+  let kolvo = document.getElementById(num).innerHTML;
+
+  if (kolvo < 10) {
+    kolvo++;
+    document.getElementById(num).innerHTML = kolvo;
+  }
+
+  if (kolvo == 10){
+    document.getElementById(add).style.visibility = 'hidden';
+  }
+
+  if (kolvo > 0) {
+    document.getElementById(sub).style.visibility = 'visible';
+  }
+}
+
+function MinusFunction(sub,num,add) {
+  let kolvo = document.getElementById(num).innerHTML;
+
+  if (kolvo > 0) {
+    kolvo--;
+    document.getElementById(num).innerHTML = kolvo;
+  }
+
+  if (kolvo == 0){
+    document.getElementById(sub).style.visibility = 'hidden';
+  }
+
+  if (kolvo < 10) {
+    document.getElementById(add).style.visibility = 'visible';
+  }
+
+}
