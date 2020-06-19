@@ -4,6 +4,8 @@
       <title>UI-Kit</title>
       <link rel="stylesheet" href="css/style.css">
       <script type="text/javascript" src="scripts/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts\plugins\jquery.mask.min.js"></script>
       </script>
   </head>
   <body>
@@ -24,7 +26,6 @@
             <a href="#"><i id="add0" onclick="PlusFunction('sub0', 'num0', 'add0'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons plus">add_circle_outline</i></a>
           </div>
         </h3></div>
-
         <div class="dropdown-itter"><h3>Дети
           <div class="pmtoggle">
             <a href="#"><i id="sub1" onclick="MinusFunction('sub1', 'num1', 'add1'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons minus">remove_circle_outline</i></a>
@@ -32,7 +33,6 @@
             <a href="#"><i id="add1" onclick="PlusFunction('sub1', 'num1', 'add1'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons plus">add_circle_outline</i></a>
           </div>
         </h3></div>
-
         <div class="dropdown-itter"><h3>Младенцы
           <div class="pmtoggle">
             <a href="#"><i id="sub2" onclick="MinusFunction('sub2', 'num2', 'add2'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons minus">remove_circle_outline</i></a>
@@ -40,7 +40,6 @@
             <a href="#"><i id="add2" onclick="PlusFunction('sub2', 'num2', 'add2'); editGuest('num0', 'num1', 'num2', 'GuestBut');" class="material-icons plus">add_circle_outline</i></a>
           </div>
         </h3></div>
-
         <div class="lastrow">
             <a href="#" class="clear" onclick="clearFunction('num0', 'num1', 'num2', 'GuestBut', 'sub0', 'sub1', 'sub2', 'add0', 'add1', 'add2')">Очистить</a>
             <a href="#" class="agree" onclick="agreeFunction()">Применить</a>
@@ -49,6 +48,14 @@
     </div>
 
 
+    <form method="post">
+      <p><label for="texttext">Masked text field</label><br>
+      <input type="text" class="date" name="textdate" placeholder=""></input></p>
+    </form>
+
+
+
+    <script type="text/javascript" src="scripts/masks.js"></script>
   </body>
 
 
