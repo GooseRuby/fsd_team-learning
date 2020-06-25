@@ -156,6 +156,11 @@ form input {
   background: #fff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
+  font-family: Montserrat;
+}
+
+.small-date {
+  width: 150px;
 }
 
 ::placeholder {
