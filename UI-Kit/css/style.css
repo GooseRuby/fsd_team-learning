@@ -75,8 +75,21 @@ body {
 }
 
 /*оформление ui-kit2*/
-.container2-1 {
+.container-ui-kit2 {
+  display: flex;
+  /*justify-content: space-between;*/
+}
 
+.ui-kit2 {
+  margin-right: 160px;
+}
+
+.ui-kit2.col1 {
+  /*background-color: red;*/
+}
+
+.ui-kit2.col2 {
+  /*background-color: blue;*/
 }
 
 /*ОФОРМЛЕНИЕ ЭЛЕМЕНТОВ*/
@@ -147,7 +160,7 @@ label {
 form {
 }
 
-form input {
+form input[type="text"] {
   color: rgba(31, 32, 65, 0.75);
   font-size: 14px;
   height:44px;
@@ -157,10 +170,6 @@ form input {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   font-family: Montserrat;
-}
-
-.small-date {
-  width: 150px;
 }
 
 ::placeholder {
@@ -250,15 +259,18 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
 
 /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
 .show {display:block;}
+/*окончание плясок с дропбоксом*/
 
+form input[type="text"].small-date {
+  width: 150px;
+}
 
-.filterdatepicker {
+form input[type="text"].filterdatepicker {
   width: 266px;
 }
 
-.email-sub {
+form input[type="text"].email-sub {
   width: 266px;
-
 }
 
 .email-sub-btn {
@@ -296,4 +308,69 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
   padding-right: 5px;
   font-size: 30px;
   color: rgba(31, 32, 65, 0.5);
+}
+
+
+/*_____________ВТОРОЙ СТОЛБЕЦ_________________*/
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox-lb {
+  color: rgba(31, 32, 65, 0.5);
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: flex-start;
+  user-select: none;
+  cursor: pointer;
+}
+
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60% 60%;
+}
+
+.custom-checkbox:checked+label::before {
+  border-color: #BC9CFF;
+  background-image: url("../res/vectors/check.svg");
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #BC9CFF;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border: 1px solid #BC9CFF;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 3px #aaa;
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-shadow: 0 0 3px #aaa;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
 }
