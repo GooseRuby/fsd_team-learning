@@ -94,3 +94,23 @@ function clearFunction(numadult, numchild, numbaby, buttonid, subsub0, subsub1, 
   document.getElementById(addadd1).style.visibility = 'visible';
   document.getElementById(addadd2).style.visibility = 'visible';
 }
+
+/*кнопка лайка*/
+function like(likebt, likeid) {
+  let counter = document.getElementById(likeid).innerHTML;
+  let button = document.getElementById(likebt);
+
+
+  if (!button.classList.contains('liked-like-button')) {
+    button.classList.add("liked-like-button");
+    counter++;
+    console.log(likeid+' +1');
+  } else {
+    button.classList.remove("liked-like-button");
+    counter--;
+    console.log(likeid+' -1');
+  }
+
+  document.getElementById(likeid).innerHTML = counter;
+
+}

@@ -55,21 +55,21 @@
         </div>
 
         <form method="post">
-          <p><label>Masked text field</label><br>
+          <p ><label>Masked text field</label><br>
           <input type="text" class="date" name="textdate" placeholder=""></input></p>
         </form>
 
-        <form method="post">
+        <form method="post" style="margin-top: 40px">
           <p><label>Date dropdown</label><br>
           <input type='text' class="datepicker-here small-date" placeholder="ДД.ММ.ГГГГ" readonly></input></p>
         </form>
 
-        <form method="post">
+        <form method="post" style="margin-top: 40px">
           <p><label>Filter date dropdown</label><br>
           <input type='text' data-range="true" data-multiple-dates-separator=" - " class="datepicker-here filterdatepicker" data-date-format="d M" placeholder="" readonly></input></p>
         </form>
 
-        <form method="post">
+        <form method="post" style="margin-top: 40px">
           <p><label>subscription text field</label><br>
           <input type='text' class="email-sub" placeholder="Email"></input>
           <a href="#"><i class="email-sub-btn material-icons-round">arrow_forward</i></a></p>
@@ -103,7 +103,9 @@
           </label><span class="switch-lb">Получать спецпредложения</span></p>
         </form>
 
-
+        <h3 style="margin-top: 40px">like button</h3>
+        <div id="likebt0" class="like-button" onclick="like('likebt0', 'like0')"><span id="like0" class="like-counter">0</span></div>
+        <div id="likebt1" class="like-button" onclick="like('likebt1', 'like1')"><span id="like1" class="like-counter">12</span></div>
 
       </div>
 
