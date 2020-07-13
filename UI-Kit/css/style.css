@@ -419,25 +419,106 @@ form input[type="text"].email-sub {
   background-image: url("../res/vectors/radio.svg");
 }
 
-/* стили при наведении курсора на checkbox */
+/* стили при наведении курсора на radio */
 .custom-radio:not(:disabled):not(:checked)+label:hover::before {
   border-color: #BC9CFF;
 }
-/* стили для активного состояния чекбокса (при нажатии на него) */
+/* стили для активного состояния радиобаттона (при нажатии на него) */
 .custom-radio:not(:disabled):active+label::before {
   background-color: #b3d7ff;
   border: 1px solid #BC9CFF;
 }
-/* стили для чекбокса, находящегося в фокусе */
+/* стили для радиобатонна, находящегося в фокусе */
 .custom-radio:focus+label::before {
   box-shadow: 0 0 3px #aaa;
 }
-/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+/* стили для радио, находящегося в фокусе и не находящегося в состоянии checked */
 .custom-radio:focus:not(:checked)+label::before {
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-shadow: 0 0 3px #aaa;
 }
-/* стили для чекбокса, находящегося в состоянии disabled */
+/* стили для радио, находящегося в состоянии disabled */
 .custom-radio:disabled+label::before {
   background-color: #e9ecef;
+}
+
+
+/*ТОГГЛЫ*/
+.switch-lb {
+  color: rgba(31, 32, 65, 0.5);
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: none;
+  user-select: none; 
+  margin-left: 10px;
+}
+/* Бокс в котором переключатель */
+.switch {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Прячем обычный чекбокс */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Слайдер */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  background-color: #FFF;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/*размер и цвет слайдера*/
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  top: 3px;
+  background-color: rgba(31, 32, 65, 0.25);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  border: 1px solid #BC9CFF;
+  box-sizing: border-box;
+}
+
+input:focus + .slider {
+  /*box-shadow: 0 0 1px #2196F3;*/
+}
+
+/*тут мы сдвигаем сам слайдер и меняем его*/
+input:checked + .slider:before {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 10px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
