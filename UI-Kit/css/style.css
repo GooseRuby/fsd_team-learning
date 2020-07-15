@@ -460,6 +460,7 @@ form input[type="text"].email-sub {
   width: 40px;
   height: 20px;
   cursor: pointer;
+  user-select: none;
 }
 
 /* Прячем обычный чекбокс */
@@ -555,4 +556,56 @@ input:checked + .slider:before {
 .liked-like-button {
   background-image: url("../res/vectors/favorite.svg");
   border: 1px solid #BC9CFF;
+}
+
+
+/*ЗВЁЗДОЧКИ РЕЙТИНГА*/
+/*спрайты звёзд*/
+.reviewStars-input input:checked ~ label, .reviewStars-input label, .reviewStars-input label:hover, .reviewStars-input label:hover ~ label {
+  background: url("../res/vectors/star_border.svg") no-repeat;
+}
+
+.reviewStars-input {
+  position: relative;
+  float: left;
+}
+
+/*прячем радиобаттоны*/
+.reviewStars-input input {
+  /*filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); не знаю что это, но пусть будет*/
+  opacity: 0;
+
+  width: 0px;
+  height: 0px;
+
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+/*если выделено*/
+.reviewStars-input input:checked ~ label {
+  background: url("../res/vectors/star.svg") no-repeat;
+  height: 24px;
+  width: 24px;
+}
+
+/*обычный вид*/
+.reviewStars-input label {
+  background: url("../res/vectors/star_border.svg") no-repeat;
+  height: 24px;
+  width: 24px;
+  float: right;
+  cursor: pointer;
+  margin-right: 0px;
+
+  position: relative;
+  z-index: 1;
+}
+
+/*при наведении мышкой*/
+.reviewStars-input label:hover, .reviewStars-input label:hover ~ label {
+  background: url("../res/vectors/star.svg") no-repeat;
+  height: 24px;
+  width: 24px;
 }
