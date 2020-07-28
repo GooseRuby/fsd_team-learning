@@ -5,10 +5,12 @@
       <link rel="stylesheet" href="css/style.css">
       <script type="text/javascript" src="scripts/script.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts\plugins\ion.rangeSlider.min.js"></script>
       <script type="text/javascript" src="scripts\plugins\jquery.mask.min.js"></script>
+      <script src="scripts/plugins/datepicker.min.js"></script>
 
       <link href="css/plugins/datepicker.min.css" rel="stylesheet" type="text/css">
-      <script src="scripts/plugins/datepicker.min.js"></script>
+      <link href="css/plugins/ion.rangeSlider.css" rel="stylesheet" type="text/css">
 
       </script>
   </head>
@@ -130,12 +132,27 @@
 
       </div>
 
+      <div class="ui-kit2 col3">
+        <h3 style="margin: 0px">Range slider</h3>
+        <form method="post" class="slider1">
+          <input type="text" class="js-range-slider" name="my_range" value=""
+            data-type="double"
+            data-min="5000"
+            data-max="10000"
+            data-from="6500"
+            data-to="8000"
+            data-step="250"
+          />
+        </form>
+      </div>
+
     </div>
 
 
 
 
     <script type="text/javascript" src="scripts/masks.js"></script>
+    <script type="text/javascript" src="scripts/sliders.js"></script>
   </body>
 
 

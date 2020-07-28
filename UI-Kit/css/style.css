@@ -92,6 +92,10 @@ body {
   /*background-color: blue;*/
 }
 
+.ui-kit2.col3 {
+  /*background-color: green;*/
+}
+
 /*ОФОРМЛЕНИЕ ЭЛЕМЕНТОВ*/
 /*цвета*/
 .DarkShade100 {
@@ -608,4 +612,10 @@ input:checked + .slider:before {
   background: url("../res/vectors/star.svg") no-repeat;
   height: 24px;
   width: 24px;
+}
+
+
+/*СЛАЙДЕРЫ*/
+.slider1 {
+  width: 266px;
 }
