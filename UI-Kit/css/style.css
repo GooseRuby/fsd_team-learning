@@ -619,3 +619,26 @@ input:checked + .slider:before {
 .slider1 {
   width: 266px;
 }
+
+/*КНОПКИ*/
+.gradient_button {
+  padding: 14px 21px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.gradient_button:active {
+  opacity: 0.5;
+}
+
+.gradient_button:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
