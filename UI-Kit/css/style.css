@@ -6,7 +6,10 @@
 body {
   color: rgba(31, 32, 65, 0.75);
   margin: 140px;
-  background-color: gray;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /*оформление ui-kit1*/
@@ -686,4 +689,53 @@ input:checked + .slider:before {
 
 .pay_button:active {
   opacity: 0.5;
+}
+
+/*СТРАНИЧКИ ПЕРЕКЛЮЧАТЕЛЬ*/
+.pagination_container {
+  display: flex;
+
+}
+
+.pagination_container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.page_backward {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.page_forward {
+  border-radius: 50%;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.page_backward img {
+  transform: rotate(180deg);
+}
+
+.page_number {
+  font-family: Montserrat;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.page_number:hover {
+  background-color: rgba(31, 32, 65, 0.2);
+}
+
+.page_active {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  font-family: Montserrat;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
 }
