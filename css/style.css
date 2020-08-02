@@ -1,0 +1,132 @@
+/*подключение шрифтов*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  color: rgba(31, 32, 65, 0.75);
+  margin: 140px;
+}
+
+footer {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 140px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 120px;
+  background-color: dedede;
+}
+
+.footer_container {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.footer_container a {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer_container a:hover {
+  opacity: 50%;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 24px;
+  color: #1F2041;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 19px;
+  color: #1F2041;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.menu_container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.ui-kit_container {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.site_container {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+.gradient_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0px 21px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.gradient_button:hover {
+  opacity: 50%;
+}
+
+.gradient_button:active {
+  opacity: 100%;
+}
+
+.gradient_button_disable {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+
+  padding: 0px 21px;
+  height: 44px;
+  background: gray;
+  opacity: 30%;
+  border-radius: 22px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}

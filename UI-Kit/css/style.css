@@ -12,6 +12,57 @@ body {
   display: none !important;
 }
 
+/*панелька со страничками*/
+.control_pad {
+  position: fixed;
+  display: flex;
+  left: 3px;
+  top: 3px;
+}
+
+.control_pad a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.control_pad a:hover {
+  opacity: 50%;
+}
+
+.pad_home {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  color: white;
+  text-decoration: none;
+}
+
+.pad_back {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.pad_back img {
+  transform: rotate(180deg);
+}
+
+.pad_next {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.pad_disable {
+  background: none;
+  background-color: gray;
+  opacity: 30%;
+}
+
+.pad_disable:hover {
+  opacity: 30% !important;
+  cursor: default;
+}
+
 /*оформление ui-kit1*/
 .container1 {
   position: absolute;
@@ -626,7 +677,12 @@ input:checked + .slider:before {
 
 /*КНОПКИ*/
 .gradient_button {
-  padding: 14px 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0px 21px;
+  height: 44px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
   text-decoration: none;
