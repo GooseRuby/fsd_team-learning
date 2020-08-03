@@ -132,23 +132,12 @@ body {
 /*оформление ui-kit2*/
 .container-ui-kit2 {
   display: flex;
+  margin-bottom: 100px;
   /*justify-content: space-between;*/
 }
 
 .ui-kit2 {
   margin-right: 160px;
-}
-
-.ui-kit2.col1 {
-  /*background-color: red;*/
-}
-
-.ui-kit2.col2 {
-  /*background-color: blue;*/
-}
-
-.ui-kit2.col3 {
-  /*background-color: green;*/
 }
 
 /*ОФОРМЛЕНИЕ ЭЛЕМЕНТОВ*/

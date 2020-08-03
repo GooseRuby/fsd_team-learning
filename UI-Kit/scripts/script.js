@@ -95,6 +95,89 @@ function clearFunction(numadult, numchild, numbaby, buttonid, subsub0, subsub1, 
   document.getElementById(addadd2).style.visibility = 'visible';
 }
 
+
+
+/*ВТОРОЙ DROPDOWN*/
+
+function roomFunction() {
+  document.getElementById("roomDropdown").classList.toggle("show");
+}
+
+/*плюс в дропбоксе*/
+function RoomPlusFunction(sub,num,add) {
+  let kolvo = document.getElementById(num).innerHTML;
+
+  if (kolvo < 10) {
+    kolvo++;
+    document.getElementById(num).innerHTML = kolvo;
+  }
+
+  if (kolvo == 10){
+    document.getElementById(add).style.visibility = 'hidden';
+  }
+
+  if (kolvo > 0) {
+    document.getElementById(sub).style.visibility = 'visible';
+  }
+}
+
+/*минус в дропбоксе*/
+function RoomMinusFunction(sub,num,add) {
+  let kolvo = document.getElementById(num).innerHTML;
+
+  if (kolvo > 0) {
+    kolvo--;
+    document.getElementById(num).innerHTML = kolvo;
+  }
+
+  if (kolvo == 0){
+    document.getElementById(sub).style.visibility = 'hidden';
+  }
+
+  if (kolvo < 10) {
+    document.getElementById(add).style.visibility = 'visible';
+  }
+}
+
+/*строка ввода "кол-во гостей"*/
+function editRoom(numadult, numchild, numbaby, buttonid) {
+  let kolvoBedroom = document.getElementById(numadult).innerHTML;
+  let kolvoBed = document.getElementById(numchild).innerHTML;
+  let kolvoBathroom = document.getElementById(numbaby).innerHTML;
+
+  let roomString = '';
+
+  let but = document.getElementById(buttonid);
+
+  if (kolvoBedroom == 1) {
+    roomString += kolvoBedroom + ' спальня';
+  }else if (kolvoBedroom >= 2 && kolvoBedroom <= 4) {
+    roomString += kolvoBedroom + ' спальни';
+  }else if (kolvoBedroom >= 5 && kolvoBedroom <= 10) {
+    roomString += kolvoBedroom + ' спален';
+  }
+
+  if (kolvoBed == 1) {
+    roomString += ', ' + kolvoBed + ' кровать';
+  }else if (kolvoBed >= 2 && kolvoBed <= 4) {
+    roomString += ', ' + kolvoBed + ' кровати';
+  }else if (kolvoBed >= 5 && kolvoBed <= 10) {
+    roomString += ', ' + kolvoBed + ' кроватей';
+  }
+
+  if (kolvoBathroom == 1) {
+    roomString += ', ' + kolvoBathroom + ' ванная';
+  }else if (kolvoBathroom >= 2 && kolvoBathroom <= 4) {
+    roomString += ', ' + kolvoBathroom + ' ванные';
+  }else if (kolvoBathroom >= 5 && kolvoBathroom <= 10) {
+    roomString += ', ' + kolvoBathroom + ' ванных';
+  }
+
+  but.innerHTML = roomString;
+
+  if (roomString == '') but.innerHTML = 'Комнаты';
+}
+
 /*кнопка лайка*/
 function like(likebt, likeid) {
   let counter = document.getElementById(likeid).innerHTML;

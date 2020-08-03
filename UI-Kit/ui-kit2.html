@@ -23,7 +23,8 @@
 
     <div class="container-ui-kit2">
 
-      <div class="ui-kit2 col1">
+      <!-- первый столбец -->
+      <div class="ui-kit2">
         <form method="post">
           <p style="margin-top: 0px;"><label for="texttext">Text Field</label><br>
           <input type="text" name="texttext" placeholder="Текст"></input></p>
@@ -83,7 +84,8 @@
         </form>
       </div>
 
-      <div class="ui-kit2 col2">
+      <!-- второй столбец -->
+      <div class="ui-kit2">
         <h3 style="margin: 0px">Cheсkbox buttons</h3>
         <form method="post">
           <p><input type="checkbox" class="custom-checkbox" id="smoking" name="smoking" value="yes">
@@ -137,7 +139,8 @@
 
       </div>
 
-      <div class="ui-kit2 col3">
+      <!-- третий столбец -->
+      <div class="ui-kit2">
         <h3 style="margin-top: 0px">Range slider</h3>
         <form method="post" class="slider1">
           <input type="text" class="js-range-slider" name="my_range" value=""
@@ -167,9 +170,41 @@
           <a href="#" class="page_number">15</a>
           <a href="#" class="page_forward"><img src="./res/vectors/arrow_forward.svg"></img></a>
         </div>
-
+        <p>1 – 12 из 100+ вариантов аренды</p>
       </div>
 
+    </div>
+
+    <div class="container-ui-kit2">
+        <div class="ui-kit2">
+          <h3 style="margin: 0px;">Dropdown</h3>
+          <div class="dropdown">
+            <button id="RoomBut" onclick="roomFunction()" class="dropbtn">Комнаты</button>
+            <div id="roomDropdown" class="dropdown-content">
+              <div class="dropdown-itter"><h3>Спальни
+                <div class="pmtoggle">
+                  <a href="#"><i id="rsub0" onclick="RoomMinusFunction('rsub0', 'rnum0', 'radd0'); editRoom('rnum0', 'rnum1', 'rnum2', 'RoomBut');" class="material-icons-round minus">remove_circle_outline</i></a>
+                  <span id="rnum0">0</span>
+                  <a href="#"><i id="radd0" onclick="RoomPlusFunction('rsub0', 'rnum0', 'radd0'); editRoom('rnum0', 'rnum1', 'rnum2', 'RoomBut');" class="material-icons-round plus">add_circle_outline</i></a>
+                </div>
+              </h3></div>
+              <div class="dropdown-itter"><h3>Кровати
+                <div class="pmtoggle">
+                  <a href="#"><i id="rsub1" onclick="RoomMinusFunction('rsub1', 'rnum1', 'radd1'); editRoom('rnum0', 'rnum1', 'rnum2', 'RoomBut');" class="material-icons-round minus">remove_circle_outline</i></a>
+                  <span id="rnum1">0</span>
+                  <a href="#"><i id="radd1" onclick="RoomPlusFunction('rsub1', 'rnum1', 'radd1'); editRoom('rnum0', 'rnum1', 'rnum2', 'RoomBut');" class="material-icons-round plus">add_circle_outline</i></a>
+                </div>
+              </h3></div>
+              <div class="dropdown-itter"><h3>Ванные комнаты
+                <div class="pmtoggle">
+                  <a href="#"><i id="rsub2" onclick="RoomMinusFunction('rsub2', 'rnum2', 'radd2'); editRoom('rnum0', 'rnum1', 'rnum2', 'RoomBut');" class="material-icons-round minus">remove_circle_outline</i></a>
+                  <span id="rnum2">0</span>
+                  <a href="#"><i id="radd2" onclick="RoomPlusFunction('rsub2', 'rnum2', 'radd2'); editRoom('rnum0', 'rnum1', 'rnum2', 'RoomBut');" class="material-icons-round plus">add_circle_outline</i></a>
+                </div>
+              </h3></div>
+            </div>
+          </div>
+        </div>
     </div>
 
 
