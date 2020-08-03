@@ -806,3 +806,24 @@ input:checked + .slider:before {
 .rotate {
   transform: rotate(-180deg);
 }
+
+/*Расширенный чекбоксы*/
+.rich_title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 10px;
+}
+
+.rich_lable {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.rich_checkboxlist {
+  display: flex;
+  flex-direction: column;
+}
