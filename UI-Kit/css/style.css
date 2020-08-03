@@ -138,6 +138,8 @@ body {
 
 .ui-kit2 {
   margin-right: 160px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*ОФОРМЛЕНИЕ ЭЛЕМЕНТОВ*/
@@ -306,7 +308,7 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
 }
 
 /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
-.show {display:block;}
+.show {display:block !important;}
 /*окончание плясок с дропбоксом*/
 
 form input[type="text"].small-date {
@@ -783,4 +785,24 @@ input:checked + .slider:before {
   font-weight: bold;
   font-size: 12px;
   color: white;
+}
+
+/*Чекбокс лист*/
+.exp-checkboxlist {
+  display: none;
+}
+
+.checkboxlist-title {
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkboxlist-title img {
+  margin-left: 30px;
+  transition: all 0.2s linear 0s;
+}
+
+.rotate {
+  transform: rotate(-180deg);
 }

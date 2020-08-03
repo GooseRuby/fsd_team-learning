@@ -178,6 +178,14 @@ function editRoom(numadult, numchild, numbaby, buttonid) {
   if (roomString == '') but.innerHTML = 'Комнаты';
 }
 
+
+function checkboxFunction(arrow) {
+  document.getElementById("checkboxlist").classList.toggle("show");
+  console.log('active');
+  document.getElementById(arrow).classList.toggle("rotate")
+}
+
+
 /*кнопка лайка*/
 function like(likebt, likeid) {
   let counter = document.getElementById(likeid).innerHTML;
