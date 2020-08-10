@@ -858,3 +858,50 @@ input:checked + .slider:before {
   font-style: normal;
   font-size: 14px;
 }
+
+/*ОТЗЫВ*/
+.id_row {
+  display: flex;
+  align-items: center;
+}
+
+.comment_row {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0 0 3px;
+}
+
+.id_row img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  margin: 0 0 0 10px;
+}
+
+.comment_row p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  width: 655px;
+  margin: 0px;
+}
+
+.comment_name {
+  margin: 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.comment_date {
+  margin: 8px 0 0 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 14px;
+}
