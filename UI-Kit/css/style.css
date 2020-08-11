@@ -860,35 +860,35 @@ input:checked + .slider:before {
 }
 
 /*ОТЗЫВ*/
-.id_row {
+.comment {
   display: flex;
-  align-items: center;
+  flex-direction: row;
 }
 
-.comment_row {
+.c_column {
   display: flex;
-  align-items: flex-start;
-  margin: 10px 0 0 3px;
+  flex-direction: column;
+  margin: 0 10px 0 0;
 }
 
-.id_row img {
+.comment img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
 
-.title {
-  margin: 0 0 0 10px;
+.like-comment {
+  margin: 12px 0 0 4px;
 }
 
-.comment_row p {
+.comment_text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   width: 655px;
-  margin: 0px;
+  margin: 15px 0 0 0;
 }
 
 .comment_name {
