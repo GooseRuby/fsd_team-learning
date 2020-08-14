@@ -251,6 +251,7 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
 .dropdown {
   position: relative;
   display: inline-block;
+  user-select: none;
 }
 
 /* Выпадающее содержимое (скрыто по умолчанию) */

@@ -66,20 +66,36 @@ function editGuest(numadult, numchild, numbaby, buttonid) {
   let kolvoChild = document.getElementById(numchild).innerHTML;
   let kolvoBaby = document.getElementById(numbaby).innerHTML;
 
-  let sum = +kolvoAdult + +kolvoChild + +kolvoBaby;
-  console.log(sum);
+  let guestString = '';
+
+  let sum = +kolvoAdult + +kolvoChild;
 
   let but = document.getElementById(buttonid);
 
   if (sum == 1 || sum == 21) {
-    but.innerHTML = sum + ' гость';
+    guestString += sum + ' гость';
   }else if ((sum >= 2 && sum <= 4)||(sum >= 22 && sum <= 24)) {
-    but.innerHTML = sum + ' гостя';
+    guestString += sum + ' гостя';
   }else if ((sum >= 5 && sum <= 20)||(sum >= 25 && sum <= 30)) {
-    but.innerHTML = sum + ' гостей';
+    guestString += sum + ' гостей';
   }else if (sum == 0) {
-    but.innerHTML = 'Сколько гостей';
+    guestString += 'Сколько гостей';
   }
+
+  if (kolvoBaby == 1) {
+    guestString += ', 1 младенец';
+  }else if (kolvoBaby >= 2 && kolvoBaby <= 4) {
+    guestString += ', ' + kolvoBaby + ' младенца';
+  }else if (kolvoBaby >= 5) {
+    guestString += ', ' + kolvoBaby + ' младенцев';
+  }
+
+  but.innerHTML = guestString;
+
+  if (kolvoAdult == 0) {
+    but.innerHTML = 'Добавьте взрослого';
+  }
+
 }
 
 function clearFunction(numadult, numchild, numbaby, buttonid, subsub0, subsub1, subsub2, addadd0, addadd1, addadd2) {
@@ -140,10 +156,10 @@ function RoomMinusFunction(sub,num,add) {
 }
 
 /*строка ввода "кол-во гостей"*/
-function editRoom(numadult, numchild, numbaby, buttonid) {
-  let kolvoBedroom = document.getElementById(numadult).innerHTML;
-  let kolvoBed = document.getElementById(numchild).innerHTML;
-  let kolvoBathroom = document.getElementById(numbaby).innerHTML;
+function editRoom(numbedr, numbed, numbath, buttonid) {
+  let kolvoBedroom = document.getElementById(numbedr).innerHTML;
+  let kolvoBed = document.getElementById(numbed).innerHTML;
+  let kolvoBathroom = document.getElementById(numbath).innerHTML;
 
   let roomString = '';
 
