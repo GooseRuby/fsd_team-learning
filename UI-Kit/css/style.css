@@ -350,6 +350,8 @@ form input[type="text"].email-sub {
   font-size: 30px;
   color: rgba(31, 32, 65, 0.5);
   visibility: hidden;
+  user-select: none;
+  cursor: pointer;
 }
 
 /*Плюс*/
@@ -358,6 +360,8 @@ form input[type="text"].email-sub {
   padding-right: 5px;
   font-size: 30px;
   color: rgba(31, 32, 65, 0.5);
+  user-select: none;
+  cursor: pointer;
 }
 
 
