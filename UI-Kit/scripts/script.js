@@ -25,7 +25,7 @@ function agreeFunction() {
 }*/
 
 /*плюс в дропбоксе*/
-function PlusFunction(sub,num,add) {
+function PlusFunction(sub,num,add,clr) {
   let kolvo = document.getElementById(num).innerHTML;
 
   if (kolvo < 10) {
@@ -40,6 +40,8 @@ function PlusFunction(sub,num,add) {
   if (kolvo > 0) {
     document.getElementById(sub).style.visibility = 'visible';
   }
+
+  document.getElementById(clr).style.visibility = 'visible';
 }
 
 /*минус в дропбоксе*/
@@ -92,13 +94,13 @@ function editGuest(numadult, numchild, numbaby, buttonid) {
 
   but.innerHTML = guestString;
 
-  if (kolvoAdult == 0) {
+  if (kolvoAdult == 0 && (kolvoChild > 0 || kolvoBaby > 0)) {
     but.innerHTML = 'Добавьте взрослого';
   }
 
 }
 
-function clearFunction(numadult, numchild, numbaby, buttonid, subsub0, subsub1, subsub2, addadd0, addadd1, addadd2) {
+function clearFunction(numadult, numchild, numbaby, buttonid, subsub0, subsub1, subsub2, addadd0, addadd1, addadd2, clr) {
   document.getElementById(numadult).innerHTML = 0;
   document.getElementById(numchild).innerHTML = 0;
   document.getElementById(numbaby).innerHTML = 0;
@@ -109,11 +111,12 @@ function clearFunction(numadult, numchild, numbaby, buttonid, subsub0, subsub1, 
   document.getElementById(addadd0).style.visibility = 'visible';
   document.getElementById(addadd1).style.visibility = 'visible';
   document.getElementById(addadd2).style.visibility = 'visible';
+  document.getElementById(clr).style.visibility = 'hidden';
 }
 
 
 
-/*ВТОРОЙ DROPDOWN*/
+/*_________________ВТОРОЙ DROPDOWN_____________*/
 
 function roomFunction() {
   document.getElementById("roomDropdown").classList.toggle("show");

@@ -294,6 +294,8 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
   color: rgba(31, 32, 65, 0.5);
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
+  visibility: hidden;
 }
 
 .agree {
@@ -306,6 +308,7 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
   color: #BC9CFF;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
