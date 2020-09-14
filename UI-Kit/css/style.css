@@ -211,7 +211,7 @@ form {
   margin: 0px;
 }
 
-form input[type="text"] {
+form input[type="text"], form input[type="password"]{
   color: rgba(31, 32, 65, 0.75);
   font-size: 14px;
   height:44px;
@@ -221,6 +221,7 @@ form input[type="text"] {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   font-family: Montserrat;
+  margin: 5px 0 5px 0;
 }
 
 ::placeholder {
@@ -522,6 +523,7 @@ form input[type="text"].email-sub {
 
 /*ТОГГЛЫ*/
 .switch-lb {
+  font-family: Montserrat;
   color: rgba(31, 32, 65, 0.5);
   font-weight: normal;
   font-size: 14px;
@@ -736,7 +738,7 @@ input:checked + .slider:before {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.pay_button {
+.pay_button, .reg_button {
   position: relative;
   height: 44px;
   width: 320px;
@@ -749,13 +751,20 @@ input:checked + .slider:before {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
-  margin-top: 30px;
   cursor: pointer;
 
   color: #FFFFFF;
 }
 
-.pay_button img {
+.pay_button {
+    margin-top: 30px;
+}
+
+.reg_button {
+  margin-top: 10px;
+}
+
+.pay_button img, .reg_button img {
   position: absolute;
   top: 13px;
   right: 10px;
@@ -942,22 +951,27 @@ input:checked + .slider:before {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
+  margin-bottom: 40px;
 }
 
 .elem-border h1 {
-  margin: 0px;
+  margin: 0 0 20px 0;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
 
-.triplet {
-  margin-top: 20px;
+.sexchoose {
+  margin-top: 10px;
 }
 
 .triplet .firstrow {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+}
+
+.regmargin {
+  margin-top: 20px;
 }

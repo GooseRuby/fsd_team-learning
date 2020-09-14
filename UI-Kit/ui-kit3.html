@@ -22,21 +22,21 @@
     </div>
 
     <div class="elem-border">
-        <h1>Найдём номера под ваши пожелания</h1>
-        <div class="triplet">
-          <div class="firstrow">
-            <form method="post">
-              <label>Прибытие</label><br>
-              <input type='text' class="datepicker-here small-date" placeholder="ДД.ММ.ГГГГ" readonly></input>
-            </form>
-            <form method="post">
-              <label>Выезд</label><br>
-              <input type='text' class="datepicker-here small-date" placeholder="ДД.ММ.ГГГГ" readonly></input>
-            </form>
-          </div>
-          <div class="secondrow">
-            <h3 style="margin: 0px;">Гости</h3>
-            <div class="dropdown">
+      <h1>Найдём номера под ваши пожелания</h1>
+      <div class="triplet">
+        <div class="firstrow">
+          <form method="post">
+            <label>Прибытие</label><br>
+            <input type='text' class="datepicker-here small-date" placeholder="ДД.ММ.ГГГГ" readonly></input>
+          </form>
+          <form method="post">
+            <label>Выезд</label><br>
+            <input type='text' class="datepicker-here small-date" placeholder="ДД.ММ.ГГГГ" readonly></input>
+          </form>
+        </div>
+        <div class="secondrow">
+          <h3 style="margin: 0px;">Гости</h3>
+          <div class="dropdown">
               <button id="GuestBut" onclick="myFunction()" class="dropbtn">Сколько гостей<img src="./res/vectors/expand_more.svg"></button>
               <div id="myDropdown" class="dropdown-content">
                 <div class="dropdown-itter"><h3>Взрослые
@@ -66,11 +66,44 @@
                 </div>
               </div>
             </div>
-            <button class="pay_button">Подобрать номер<img src="./res/vectors/arrow_forward.svg"></button>
-          </div>
+          <button class="pay_button">Подобрать номер<img src="./res/vectors/arrow_forward.svg"></button>
         </div>
+      </div>
     </div>
 
+    <div class="elem-border">
+      <h1>Регистрация аккаунта</h1>
+      <form method="post">
+        <input type="text" name="name" placeholder="Имя"></input>
+        <input type="text" name="surname" placeholder="Фамилия"></input>
+        <div class="sexchoose">
+          <input type="radio" class="custom-radio" id="male" name="sex" value="yes">
+          <label class="radio-lb" for="male">Мужчина</label>
+          <input type="radio" class="custom-radio" id="female" name="sex" value="yes">
+          <label class="radio-lb" for="female">Женщина</label><br>
+        </div>
+
+        <div class="regmargin">
+          <label>Дата рождения</label><br>
+          <input type="text" class="date" name="textdate" placeholder=""></input>
+        </div>
+        <div class="regmargin">
+          <label>Данные для входа в сервис</label><br>
+          <input type="text" name="email" placeholder="Email"></input>
+          <input type="password" name="password" placeholder="Пароль"></input>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label><span class="switch-lb">Получать спецпредложения</span></p>
+        </div>
+        <button class="reg_button">Зарегестрироваться<img src="./res/vectors/arrow_forward.svg"></button>
+
+      </form>
+    </div>
+
+
+    <script type="text/javascript" src="scripts/masks.js"></script>
+    <script type="text/javascript" src="scripts/sliders.js"></script>
   </body>
 
 </html>
