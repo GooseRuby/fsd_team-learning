@@ -208,6 +208,7 @@ label {
 *:focus {outline: none;}
 
 form {
+  margin: 0px;
 }
 
 form input[type="text"] {
@@ -234,6 +235,7 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
 
 /* Кнопка выпадающего списка */
 .dropbtn {
+  position: relative;
   font-family: Montserrat;
   color: rgba(31, 32, 65, 0.75);
   font-size: 14px;
@@ -247,11 +249,18 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
   text-align: left;
 }
 
+.dropbtn img {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
+
 /* Контейнер <div> - необходим для размещения выпадающего содержимого */
 .dropdown {
   position: relative;
   display: inline-block;
   user-select: none;
+  margin-top: 5px;
 }
 
 /* Выпадающее содержимое (скрыто по умолчанию) */
@@ -317,6 +326,14 @@ form input:focus, form input:hover, form textarea:focus, .dropbtn:hover, .dropbt
 
 form input[type="text"].small-date {
   width: 150px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.exp_more{
+  position: relative;
+  right: 25px;
+  pointer-events: none;
 }
 
 form input[type="text"].filterdatepicker {
@@ -335,6 +352,8 @@ form input[type="text"].email-sub {
   font-size: 30px;
   left: -40px;
   top: 10px;
+  cursor: pointer;
+  user-select: none;
 }
 
 /*_____________ПЛЮС МИНУС В ДРОПБОКСЕ_________________*/
@@ -912,4 +931,33 @@ input:checked + .slider:before {
   font-family: Montserrat;
   font-style: normal;
   font-size: 14px;
+}
+
+/*___ОФОРМЛЕНИЕ ДИВОВ В UI-KIT3_____*/
+.elem-border {
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 30px 30px 30px;
+}
+
+.elem-border h1 {
+  margin: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.triplet {
+  margin-top: 20px;
+}
+
+.triplet .firstrow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
 }

@@ -18,11 +18,11 @@
     <div class="control_pad">
       <a class="pad_home" href="../index.html" title="на главную"><i class="material-icons-round">home</i></a>
       <a class="pad_back" href="ui-kit.html" title="ui-kit 1"><img src="./res/vectors/arrow_forward.svg"></a>
-      <a class="pad_next pad_disable" title="ui-kit 3"><img src="./res/vectors/arrow_forward.svg"></a>
+      <a class="pad_next" href="ui-kit3.html" title="ui-kit 3"><img src="./res/vectors/arrow_forward.svg"></a>
     </div>
 
+    <!-- ПЕРВАЯ СТРОКА -->
     <div class="container-ui-kit2">
-
       <!-- первый столбец -->
       <div class="ui-kit2">
         <form method="post">
@@ -32,7 +32,7 @@
 
         <h3 style="margin: 0px;">Dropdown</h3>
         <div class="dropdown">
-          <button id="GuestBut" onclick="myFunction()" class="dropbtn">Сколько гостей</button>
+          <button id="GuestBut" onclick="myFunction()" class="dropbtn">Сколько гостей<img src="./res/vectors/expand_more.svg"></button>
           <div id="myDropdown" class="dropdown-content">
             <div class="dropdown-itter"><h3>Взрослые
               <div class="pmtoggle">
@@ -69,18 +69,18 @@
 
         <form method="post" style="margin-top: 40px">
           <p><label>Date dropdown</label><br>
-          <input type='text' class="datepicker-here small-date" placeholder="ДД.ММ.ГГГГ" readonly></input></p>
+          <input type='text' class="datepicker-here small-date" placeholder="ДД.ММ.ГГГГ" readonly><img class="exp_more" src="./res/vectors/expand_more.svg"></input></p>
         </form>
 
         <form method="post" style="margin-top: 40px">
           <p><label>Filter date dropdown</label><br>
-          <input type='text' data-range="true" data-multiple-dates-separator=" - " class="datepicker-here filterdatepicker" data-date-format="d M" placeholder="" readonly></input></p>
+          <input type='text' data-range="true" data-multiple-dates-separator=" - " class="datepicker-here filterdatepicker" data-date-format="d M" placeholder="" readonly><img class="exp_more" src="./res/vectors/expand_more.svg"></input></p>
         </form>
 
         <form method="post" style="margin-top: 40px">
           <p><label>subscription text field</label><br>
           <input type='text' class="email-sub" placeholder="Email"></input>
-          <a href="#"><i class="email-sub-btn material-icons-round">arrow_forward</i></a></p>
+          <i class="email-sub-btn material-icons-round">arrow_forward</i></p>
         </form>
       </div>
 
@@ -173,12 +173,13 @@
 
     </div>
 
+    <!-- ВТОРАЯ СТРОКА -->
     <div class="container-ui-kit2">
         <div class="ui-kit2">
           <h3 style="margin: 0px;">Dropdown</h3>
           <div class="dropdown">
-            <button id="RoomBut" onclick="roomFunction()" class="dropbtn">Комнаты</button>
-            <div id="roomDropdown" class="dropdown-content">
+            <button id="RoomBut" onclick="roomFunction()" class="dropbtn" style="width: 266px;">Комнаты<img src="./res/vectors/expand_more.svg"></button>
+            <div id="roomDropdown" class="dropdown-content" style="width: 266px;">
               <div class="dropdown-itter"><h3>Спальни
                 <div class="pmtoggle">
                   <i id="rsub0" onclick="RoomMinusFunction('rsub0', 'rnum0', 'radd0'); editRoom('rnum0', 'rnum1', 'rnum2', 'RoomBut');" class="material-icons-round minus">remove_circle_outline</i>
@@ -240,6 +241,7 @@
         </div>
     </div>
 
+    <!-- ТРЕТЬЯ СТРОКА -->
     <div class="container-ui-kit2">
       <div class="ui-kit2">
         <div class="features">
